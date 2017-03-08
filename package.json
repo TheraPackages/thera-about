@@ -1,0 +1,54 @@
+{
+  "name": "about",
+  "author": "Machisté N. Quintana <mnquintana@users.noreply.github.com>",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "keywords": [],
+  "repository": "https://github.com/TheraPackages/thera-about",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard"
+  },
+  "engines": {
+    "atom": ">=1.7 <2.0.0"
+  },
+  "dependencies": {
+    "etch": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "standard": "^5.4.1"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "deserializers": {
+    "AboutView": "deserializeAboutView"
+  },
+  "standard": {
+    "ignore": [],
+    "parser": "babel-eslint",
+    "globals": [
+      "atom",
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "fdescribe",
+      "xdescribe",
+      "expect",
+      "it",
+      "fit",
+      "xit",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waits",
+      "waitsFor",
+      "waitsForPromise"
+    ]
+  }
+}
